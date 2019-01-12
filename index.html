@@ -70,9 +70,9 @@
 				</div>
 			</div>
 		</div>
-		<audio src="http://other.web.rs01.sycdn.kuwo.cn/resource/n1/17/47/3475856189.mp3" autoplay="true" loop="loop" id="audio"></audio>
+		<!-- <audio src="http://other.web.rs01.sycdn.kuwo.cn/resource/n1/17/47/3475856189.mp3" autoplay="true" loop="loop" id="audio"></audio> -->
 		<!-- <audio src="./music.mp3" autoplay="true" loop="loop" id="audio"></audio> -->
-
+		<embed src="http://other.web.rs01.sycdn.kuwo.cn/resource/n1/17/47/3475856189.mp3" autostart="true" loop="true" hidden="true" width="0" height="0">
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
@@ -106,25 +106,25 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		};
-		//--创建页面监听，等待微信端页面加载完毕 触发音频播放
-		document.addEventListener('DOMContentLoaded', function () {
-			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-					audio.play();
-				document.addEventListener("WeixinJSBridgeReady", function () {
-					audio.play();
-				}, false);
-			}
-			audioAutoPlay();
-		});
-		//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-		document.addEventListener('touchstart', function () {
-			function audioAutoPlay() {
-				var audio = document.getElementById('audio');
-					audio.play();
-			}
-			audioAutoPlay();
-		});
+// 		//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+// 		document.addEventListener('DOMContentLoaded', function () {
+// 			function audioAutoPlay() {
+// 				var audio = document.getElementById('audio');
+// 					audio.play();
+// 				document.addEventListener("WeixinJSBridgeReady", function () {
+// 					audio.play();
+// 				}, false);
+// 			}
+// 			audioAutoPlay();
+// 		});
+// 		//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+// 		document.addEventListener('touchstart', function () {
+// 			function audioAutoPlay() {
+// 				var audio = document.getElementById('audio');
+// 					audio.play();
+// 			}
+// 			audioAutoPlay();
+// 		});
 	</script>
 
 
